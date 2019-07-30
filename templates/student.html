@@ -11,6 +11,10 @@
 	Class: {{student.year}}<br>
 	Finished Lab: {{student.finished_lab}}
 	</p>
+    <form action="{{url_for('delete',student_id=student.student_id)}}" method="post">
+    	<input type="submit" value="delete">
+
+    </form>
     <p><a href="{{url_for('home')}}">Home</a></p>
 
 </body>
